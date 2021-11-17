@@ -39,7 +39,8 @@ var __extends = (this && this.__extends) || (function () {
         Dog.prototype.run = function (distance) {
             if (distance === void 0) { distance = 10; }
             console.log("wang wang wang\uFF01\uFF01\uFF01");
-            _super.prototype.run.call(this, distance);
+            //这个有点误导了super.run(distance)
+            console.log('不会是笨蛋吧');
         };
         return Dog;
     }(Animal));

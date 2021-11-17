@@ -26,7 +26,8 @@
         //重写父类方法
         run(distance = 10) {
             console.log(`wang wang wang！！！`)
-            super.run(distance)
+            //这个有点误导了super.run(distance)
+            console.log('不会是笨蛋吧')
         }
     }
 
@@ -42,7 +43,7 @@
     }
 
     //实例化子类
-    const dog = new Dog('god')
+    const dog:Dog = new Dog('god')
     dog.run(16)
 
     const snake = new Snake('sn')
