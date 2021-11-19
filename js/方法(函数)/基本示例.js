@@ -16,6 +16,7 @@ let myAdd = function (x, y) {
 let add1 = (x,y) => { return x + y } //可以简写成 let add1 = (x,y) => return x + y
 
 */
+//定义函数（得使用命名函数，用匿名|箭头函数的方式会报错）
 function add(parameA, parameB) {
     if (typeof parameA === 'string' && typeof parameB === 'string') {
         return parameA + parameB;

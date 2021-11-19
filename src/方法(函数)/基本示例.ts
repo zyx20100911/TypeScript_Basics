@@ -81,8 +81,10 @@ console.log(arr('xiamign', 2, '是个小天才', 'str + age + arrs','不会吧�
 *需求: 我们有一个add函数，它可以接收2个string类型的参数进行拼接，也可以接收2个number类型的参数进行相加
 * */
 
+// 重载函数声明
 function add(parameA: string, parameB: string): string
 function add(parameA: number, parameB: number): number
+//定义函数（得使用命名函数，用匿名|箭头函数的方式会报错）
 function add(parameA: string | number, parameB: string | number): string | number {
     if (typeof parameA === 'string' && typeof parameB === 'string') {
         return parameA + parameB
